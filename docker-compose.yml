@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: alfamaweb
+      POSTGRES_PASSWORD: alfamaweb
+      POSTGRES_DB: alfama-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+    #   - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
