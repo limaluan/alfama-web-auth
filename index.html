@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Alfama Web</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Alfama Web</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/ico"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.3/css/bootstrap.css">
-  
-</head>
-<body>
-  <h1 class="">Hello World!!!</h1>
-  
-  <script src="./assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>
-</body>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap-5.3.3/css/bootstrap.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-body overflow-hidden">
+    <div class="row vh-100">
+      <!-- Authentication Section -->
+      <section class="col-12 col-lg-5 position-relative d-flex flex-column gap-4">
+        <header class="d-flex justify-content-between align-items-center auth-section-header px-4">
+          <img class="col-5" src="./assets/img/logo.svg" alt="Logotipo da Alfama Web">
+          <a href="" class="text-primary fs-4 fw-bolder">Saiba mais</a>
+        </header>
+
+        <article class="auth-section container px-4">
+          <h1 class="fw-bolder">Criar conta</h1>
+          <button type="button" class="btn border border-gray-500 d-flex align-content-center gap-2 container justify-content-center p-3">
+            <img src="./assets/img/google.png" style="width: 22px;" alt="">
+            <span class="fw-bold">Faça Login com o Google</span>
+          </button>
+          <div class="d-flex align-items-center gap-4">
+            <hr class="w-100 d-inline-block"/><span>ou</span><hr class="d-inline-block w-100"/>
+          </div>
+          <form action="">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Nome completo</label>
+              <input type="email" required class="form-control p-3" id="exampleFormControlInput1" placeholder="Digite seu nome completo">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Email</label>
+              <input type="email" required class="form-control p-3" id="exampleFormControlInput1" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Senha</label>
+              <input type="email" required class="form-control p-3" id="exampleFormControlInput1" placeholder="Crie uma senha">
+            </div>                              
+            <button type="button" class="btn btn-primary container p-3 fw-bold mt-4">Criar conta</button>
+          </form>
+          <p class="text-center mt-4 fw-bold">Já tem uma conta? <a href="?registrar" class="text-decoration-underline">Faça login</a></p>
+        </article>    
+      </section>
+
+      <!-- Hero Carousel -->
+      <div id="carouselExample" class="carousel slide d-none col-lg-7 d-lg-block ">
+        <div class="carousel-inner">
+          <div class="carousel-item active hero-section vh-100 w-100">
+            <h1>Lorem ipsum dolor sit. 1</h1>
+          </div>
+          <div class="carousel-item active hero-section vh-100 w-100">
+            <h1>Lorem ipsum dolor sit. 2</h1>
+          </div>
+          <div class="carousel-item active hero-section vh-100 w-100">
+            <h1>Lorem ipsum dolor sit. 3</h1>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <script src="./assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>
+  </body>
 </html>
