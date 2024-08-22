@@ -22,7 +22,7 @@ if ($page == 'login') {
   <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.3/css/bootstrap.css" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,26 +51,58 @@ if ($page == 'login') {
     </section>
 
     <!-- Hero Carousel -->
-    <div id="carouselExample" class="carousel slide d-none col-lg-7 d-lg-block ">
-      <div class="carousel-inner">
+    <div id="carouselExample" class="carousel slide d-none col-lg-7 d-lg-block" data-bs-ride="carousel">
+      <div class="carousel-inner text-white">
+        <!-- Carousel Item 1 -->
         <div class="carousel-item active hero-section vh-100 w-100">
-          <h1>Lorem ipsum dolor sit. 1</h1>
+          <div class="d-flex flex-column w-75 m-auto position-absolute bottom-0 start-50 translate-middle-x gap-3">
+            <h1 class="title col-10">Lorem ipsum dolor sit conse ctetur adipis.</h1>
+            <h3 class="col-10">Lorem ipsum dolor sit amet, consectetur adipis elit. Donec euismod risus vitae libero vestibulu.</h3>
+            <div>
+              <div class="d-flex gap-2">
+                <img src="./assets/img/stars.png" alt="5 Estrelas" height="26">
+                <span class="fs-5">5.0</span>
+              </div>
+              <p class="fs-5 mt-2">+200 comentários</p>
+              <div class="d-flex justify-content-end mb-4">
+                <button class="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item active hero-section vh-100 w-100">
-          <h1>Lorem ipsum dolor sit. 2</h1>
-        </div>
-        <div class="carousel-item active hero-section vh-100 w-100">
-          <h1>Lorem ipsum dolor sit. 3</h1>
+        
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item hero-section vh-100 w-100">
+          <div class="d-flex flex-column w-75 m-auto position-absolute bottom-0 start-50 translate-middle-x gap-3">
+            <h1 class="title col-10">Lorem ipsum dolor sit conse ctetur adipis.</h1>
+            <h3 class="col-10">Lorem ipsum dolor sit amet, consectetur adipis elit. Donec euismod risus vitae libero vestibulu.</h3>
+            <div>
+              <div class="d-flex gap-2">
+                <img src="./assets/img/stars.png" alt="5 Estrelas" height="26">
+                <span class="fs-5">5.0</span>
+              </div>
+              <p class="fs-5 mt-2">+200 comentários</p>
+              <div class="d-flex justify-content-end mb-4">
+                <button class="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
   <script src="./assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>

@@ -1,5 +1,5 @@
 <article class="auth-section container px-4">
-    <h1 class="fw-bolder">Criar conta</h1>
+    <h1 class="fw-bolder title">Criar conta</h1>
     <button type="button"
         class="btn border border-gray-500 d-flex align-content-center gap-2 container justify-content-center p-3">
         <img src="./assets/img/google.png" style="width: 22px;" alt="">
