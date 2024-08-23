@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS users (
   cpf VARCHAR(14) UNIQUE,
   company VARCHAR(255),
   password VARCHAR(255) NOT NULL,
-  address TEXT
+  address TEXT,
+  image_url VARCHAR(2048)
 );

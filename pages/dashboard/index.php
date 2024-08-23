@@ -1,5 +1,11 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/protect.php'
+include $_SERVER['DOCUMENT_ROOT'] . '/protect.php';
+
+$profileImg = 'https://ionicframework.com/docs/img/demos/avatar.svg';
+if (isset($_SESSION['user']['img_url'])) {
+  $profileImg = $_SESSION['user']['image_url'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,9 +29,9 @@ include $_SERVER['DOCUMENT_ROOT'] . '/protect.php'
     </header>
 
     <main class="user-data-container px-5">
-      <form class="m-auto mt-5">
+      <form class="m-auto mt-5" id="updateForm" method="POST">
         <div class="row flex-column align-items-center">
-          <img class="rounded-circle w-25" src="https://avatars.githubusercontent.com/u/83187601?s=400&u=cdf311d37c919325e63aed73fb177b76a9c20894&v=4" alt=""/>
+          <img class="rounded-circle w-25" src="<?php echo $profileImg ?>" alt=""/>
           <button type="button" class="bg-primary rounded-circle">
             <i class="bi bi-camera text-white fs-2"></i>
           </button>
@@ -81,6 +87,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/protect.php'
     </main>
 
     <script src="../../assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>
+    <script src="../../assets/js/update_user.js"></script>
   </body>
 
 </html>
