@@ -16,7 +16,7 @@ a {
 
 .hero-section + .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://img.freepik.com/fotos-gratis/casamento-de-idosos-usando-laptop-na-sala-de-estar_329181-14680.jpg?t=st=1724346121~exp=1724349721~hmac=336addf1870245e8a97b14c7d6c62b6a12db88fa3199124d4c161330ce844f59&w=1380");
+    url("../img/old-couple.jpg");
 }
 
 .auth-section-header {

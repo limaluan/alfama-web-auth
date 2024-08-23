@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS users (
   phone VARCHAR(20),
   cpf VARCHAR(14) UNIQUE,
   company VARCHAR(255),
+  password VARCHAR(255) NOT NULL,
   address TEXT
 );

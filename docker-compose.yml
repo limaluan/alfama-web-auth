@@ -2,19 +2,18 @@ version: '3.9'
 
 services:
   db:
-    image: postgres
+    image: mysql
     restart: always
     shm_size: 128mb
-    container_name: postgres_db
+    container_name: mysql_db
     environment:
-      POSTGRES_USER: alfamaweb
-      POSTGRES_PASSWORD: alfamaweb
-      POSTGRES_DB: alfama-db
+      MYSQL_ROOT_PASSWORD: alfamaweb
+      MYSQL_DATABASE: alfama-db
     ports:
-      - "5432:5432"
+      - "3306:3306"
     volumes:
       - ./initdb:/docker-entrypoint-initdb.d
     #   - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  mysql_data:
