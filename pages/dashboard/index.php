@@ -1,7 +1,5 @@
 <?php
-if (!isset($_SESSION)) {
-    session_start();
-};
+include $_SERVER['DOCUMENT_ROOT'] . '/protect.php'
 ?>
 
 <!DOCTYPE html>
@@ -40,36 +38,36 @@ if (!isset($_SESSION)) {
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Nome Completo</label>
             <input type="text" required class="form-control p-3" id="full_name" name="full_name"
-                placeholder="Digite seu nome" value=<?php echo $_SESSION['user']['full_name'] ?>>
+                placeholder="Digite seu nome" value="<?php echo $_SESSION['user']['full_name']; ?>">
           </div>
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Email</label>
             <input type="email" required class="form-control p-3" id="email" name="email"
-                placeholder="Digite seu email" value=<?php echo $_SESSION['user']['email'] ?>>
+                placeholder="Digite seu email" value="<?php echo $_SESSION['user']['email'] ?>">
           </div>
         </div>
         <div class="row">
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Telefone</label>
             <input type="number" required class="form-control p-3" id="phone" name="phone"
-                placeholder="Digite seu telefone" value=<?php echo $_SESSION['user']['phone'] ?>>
+                placeholder="Digite seu telefone" value="<?php echo $_SESSION['user']['phone'] ?>">
           </div>
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">CPF</label>
             <input type="text" required class="form-control p-3" id="cpf" name="cpf"
-                placeholder="Digite seu CPF" value=<?php echo $_SESSION['user']['cpf'] ?>>
+                placeholder="Digite seu CPF" value="<?php echo $_SESSION['user']['cpf'] ?>">
           </div>
         </div>
         <div class="row">
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Empresa</label>
             <input type="text" required class="form-control p-3" id="company" name="company"
-                placeholder="Digite sua empresa" value=<?php echo $_SESSION['user']['company'] ?>>
+                placeholder="Digite sua empresa" value="<?php echo $_SESSION['user']['company'] ?>">
           </div>
           <div class="mb-3 col-12 col-md-6">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Endereço</label>
             <input type="text" required class="form-control p-3" id="address" name="address"
-                placeholder="Digite seu endereço" value=<?php echo $_SESSION['user']['address'] ?>>
+                placeholder="Digite seu endereço" value="<?php echo $_SESSION['user']['address'] ?>">
           </div>
         </div>
         <div class="row justify-content-center pb-5">
