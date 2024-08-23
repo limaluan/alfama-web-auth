@@ -1,7 +1,7 @@
 <article class="auth-section container px-4">
     <h1 class="fw-bolder title">Fazer login</h1>
     <p class="fw-bold my-4">Nova conta? <a href="?page=registrar" class="text-primary">Cadastre-se gratuitamente</a></p>
-    <form action="/actions/login.php" method="post">
+    <form onsubmit="handleLogin()" method="post">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Email</label>
             <input type="email" required class="form-control p-3" id="email" name="email"
@@ -21,3 +21,4 @@
         </button>
     </form>
 </article>
+<script src="/assets/js/login.js"></script>

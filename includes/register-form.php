@@ -9,21 +9,24 @@
         <hr class="w-100 d-inline-block" /><span>ou</span>
         <hr class="d-inline-block w-100" />
     </div>
-    <form action="/actions/register.php" method="POST">
+    <form onsubmit="onsubmit="handleRegister()"" method="POST" id="registerForm">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Nome completo</label>
             <input type="text" required class="form-control p-3" id="name" name="name"
                 placeholder="Digite seu nome completo">
+            <p class="ms-3 mt-1" id="nameErrorMsg"></p>
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Email</label>
             <input type="email" required class="form-control p-3" id="email" name="email"
                 placeholder="Digite seu email">
-        </div>
+            <p class="ms-3 mt-1" id="emailErrorMsg"></p>
+            </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Senha</label>
             <input type="password" required class="form-control p-3" id="password" name="password"
                 placeholder="Crie uma senha">
+            <p class="ms-3 mt-1" id="passErrorMsg"></p>
         </div>
         <button type="submit" class="btn btn-primary container p-3 fw-bold mt-4">Criar conta</button>
     </form>
@@ -31,3 +34,4 @@
         <a href="?page=login" class="text-decoration-underline">Faça login</a>
     </p>
 </article>
+<script src="/assets/js/register.js"></script>

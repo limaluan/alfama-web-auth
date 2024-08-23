@@ -3,8 +3,8 @@ include '../db_connection.php';
 
 if (isset($_POST['email']) && isset($_POST['password'])) {
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $password = $mysqli->real_escape_string($_POST['password']);
 
     $stmt = $mysqli->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
