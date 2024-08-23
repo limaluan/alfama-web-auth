@@ -2,7 +2,7 @@
 $user = 'root';
 $pass = 'alfamaweb';
 $database = 'alfama-db';
-$host = '172.23.0.2';
+$host = 'db';
 
 $mysqli = new mysqli($host, $user, $pass, $database);
 
