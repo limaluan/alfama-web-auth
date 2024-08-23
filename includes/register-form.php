@@ -9,7 +9,7 @@
         <hr class="w-100 d-inline-block" /><span>ou</span>
         <hr class="d-inline-block w-100" />
     </div>
-    <form onsubmit="onsubmit="handleRegister()"" method="POST" id="registerForm">
+    <form method="POST" id="registerForm">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Nome completo</label>
             <input type="text" required class="form-control p-3" id="name" name="name"

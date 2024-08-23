@@ -1,11 +1,17 @@
 <?php
 include '../db_connection.php';
+include '../error_handler.php';
 
-if (isset($_POST['email']) && isset($_POST['password'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = json_decode(file_get_contents('php://input'), true);
 
-    $email = $mysqli->real_escape_string($_POST['email']);
-    $password = $mysqli->real_escape_string($_POST['password']);
-
+    if (!isset($data['email']) || !isset( $data['password'] )) {
+        throwError("Preencha todos os dados!", 400);
+    }
+    
+    $email = $mysqli->real_escape_string($data['email']);
+    $password = $mysqli->real_escape_string($data['password']);
+    
     $stmt = $mysqli->prepare("SELECT * FROM users WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
@@ -15,7 +21,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         $usuario = $sql_result->fetch_assoc();
 
         if (!password_verify($password, $usuario["password"])) {
-            die("Credenciais inválidas");
+            throwError("Dados incorretos.", 403);
         }
 
         if (!isset($_SESSION)) {
@@ -27,10 +33,11 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
         header("Location: /pages/dashboard");
         exit;
+    } else {
+        throwError("Dados incorretos.", 403);
     }
-    $stmt->close();
 } else {
-    print_r('Dados inválidos');
+    print_r('Requisição não permitida');
 }
 
 $mysqli->close();

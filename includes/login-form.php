@@ -1,7 +1,7 @@
 <article class="auth-section container px-4">
     <h1 class="fw-bolder title">Fazer login</h1>
     <p class="fw-bold my-4">Nova conta? <a href="?page=registrar" class="text-primary">Cadastre-se gratuitamente</a></p>
-    <form onsubmit="handleLogin()" method="post">
+    <form method="POST" id="loginForm">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Email</label>
             <input type="email" required class="form-control p-3" id="email" name="email"
@@ -11,6 +11,7 @@
             <label for="exampleFormControlInput1" class="form-label fw-semibold ms-3">Senha</label>
             <input type="password" required class="form-control p-3" id="password" name="password"
                 placeholder="Insira sua senha">
+            <p class="ms-3 mt-1" id="loginErrorMsg"></p>
         </div>
         <a href="?senha" class="text-primary fw-bold p-3">Esqueceu sua senha?</a>
         <button type="submit" class="btn btn-primary container p-3 fw-bold mt-4">Entrar</button>
