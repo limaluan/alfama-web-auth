@@ -5,8 +5,11 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="/assets/libs/bootstrap-5.3.3/css/bootstrap.css" />
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="/assets/css/styles.css" />
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Custom Global CSS Styles -->
+<link rel="stylesheet" href="/assets/css/global.css" />
 
 <!-- Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />

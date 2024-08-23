@@ -14,6 +14,7 @@ if ($page == 'login') {
 
 <head>
   <?php include 'includes/head.php' ?>
+  <link rel="stylesheet" href="/assets/css/home.css">
   <title><?php echo $title; ?></title>
 </head>
 

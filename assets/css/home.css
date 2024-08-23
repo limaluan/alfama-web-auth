@@ -1,0 +1,29 @@
+/* Home Page / Authentication Page */
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/woman.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+  
+  .hero-section + .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/old-couple.jpg");
+  }
+  
+  .auth-section-header {
+    height: 10vh;
+  }
+  
+  .auth-section {
+    max-width: 450px;
+    height: calc(100% - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    font-size: clamp(2.5rem, 5vw,4rem);
+    font-weight: bolder;
+  }

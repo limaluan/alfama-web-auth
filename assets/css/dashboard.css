@@ -1,0 +1,17 @@
+.user-data-container {
+    form {
+        max-width: 1000px;
+    }
+    
+    /* User profile image */
+    img {
+        min-width: 200px;
+    }
+
+    /* User profile Image Switch Button */
+    img + button {
+        width: fit-content;
+        height: fit-content;
+        margin-top: -25px;
+    }
+}
