@@ -1,8 +1,7 @@
+// Updates user informations
 document.getElementById("updateForm").addEventListener("submit", (event) => {
     event.preventDefault();
     
-    // const errorMsg = document.getElementById("loginErrorMsg");
-  
     const name = document.getElementById("full_name").value;
     const email = document.getElementById("email").value;
     const phone = document.getElementById("phone").value;
@@ -23,8 +22,10 @@ document.getElementById("updateForm").addEventListener("submit", (event) => {
                   throw new Error(error.message)
               })
           }
-          // return window.location.href = "/pages/dashboard";
       })
       .catch((error) => console.log(error));
 });
   
+function handleLogout() {
+  fetch("/actions/logout.php").then(() => window.location.href = "/index.php");
+}

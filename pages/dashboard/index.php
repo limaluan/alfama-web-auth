@@ -19,12 +19,15 @@ if (isset($_SESSION['user']['image_url'])) {
 
 <body class="d-flex flex-column">
     <header class="container-fluid bg-primary">
-      <div class="container py-4">
+      <div class="container py-4 d-flex justify-content-between align-items-center">
         <img
           src="../../assets/img/logo-light.svg"
           alt="Logo da Alfama Web"
           height="35"
         />
+        <button class="btn" onclick="handleLogout()">
+          <i class="bi bi-box-arrow-left text-white fs-2"></i>
+        </button>
       </div>
     </header>
 
@@ -87,7 +90,7 @@ if (isset($_SESSION['user']['image_url'])) {
     </main>
 
     <script src="../../assets/libs/bootstrap-5.3.3/js/bootstrap.js"></script>
-    <script src="../../assets/js/update_user.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
   </body>
 
 </html>
