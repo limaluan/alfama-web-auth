@@ -2,7 +2,7 @@
 include $_SERVER['DOCUMENT_ROOT'] . '/protect.php';
 
 $profileImg = 'https://ionicframework.com/docs/img/demos/avatar.svg';
-if (isset($_SESSION['user']['img_url'])) {
+if (isset($_SESSION['user']['image_url'])) {
   $profileImg = $_SESSION['user']['image_url'];
 }
 

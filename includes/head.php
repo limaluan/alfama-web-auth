@@ -1,5 +1,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-signin-client_id" content="462792711861-dsvrds26k47ah4t0ohi9f78hpsedf846.apps.googleusercontent.com">
 <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/ico" />
 
 <!-- Bootstrap CSS -->

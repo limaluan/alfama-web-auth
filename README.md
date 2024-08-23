@@ -23,6 +23,7 @@
   - Proteção de Rotas
   - Atualização de dados do usuário
   - Feedback e validação em campos
+  - Integração com o Google
 - Totalmente Responsivo
 
 ## 📔 Projeto

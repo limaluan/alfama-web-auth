@@ -1,6 +1,6 @@
 <article class="auth-section container px-4">
     <h1 class="fw-bolder title">Criar conta</h1>
-    <button type="button"
+    <button type="button" id="googleButton"
         class="btn border border-gray-500 d-flex align-content-center gap-2 container justify-content-center p-3">
         <img src="./assets/img/google.png" style="width: 22px;" alt="">
         <span class="fw-bold">Faça Login com o Google</span>
@@ -34,4 +34,6 @@
         <a href="?page=login" class="text-decoration-underline">Faça login</a>
     </p>
 </article>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <script src="/assets/js/register.js"></script>
+<script src="/assets/js/login_google.js"></script>

@@ -15,7 +15,7 @@
         </div>
         <a href="?senha" class="text-primary fw-bold p-3">Esqueceu sua senha?</a>
         <button type="submit" class="btn btn-primary container p-3 fw-bold mt-4">Entrar</button>
-        <button type="button"
+        <button type="button" id="googleButton"
             class="btn border border-gray-500 d-flex align-content-center gap-2 container justify-content-center p-3 mt-4">
             <img src="./assets/img/google.png" style="width: 22px;" alt="">
             <span class="fw-bold">Faça Login com o Google</span>
@@ -23,3 +23,5 @@
     </form>
 </article>
 <script src="/assets/js/login.js"></script>
+<script src="/assets/js/login_google.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
